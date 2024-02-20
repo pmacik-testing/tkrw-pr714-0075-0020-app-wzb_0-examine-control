@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-zkir
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0020-tenant/tkrw-pr714-0075-0020-app/devfile-sample-zkir@sha256:29fe24dedfcee58a5013579c028ada78529c02f9dc7f4f33fdec655729fec18b
+        name: my-nodejs
+        resources: {}
+status: {}
